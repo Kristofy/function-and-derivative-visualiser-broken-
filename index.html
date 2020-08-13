@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="main.js"></script>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        
+        #panel{
+            margin-left: 1em;
+        }
+
+        #panel *{
+            font-size: large;
+        }
+
+        #panel div{
+            margin-bottom: 0.4em;
+            padding: 0.7em;
+        }
+
+        input[type="button"]{
+            padding: 0.8rem;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="width: 100%; height: 100%;display: flex; flex-direction: row; align-items: center; justify-content: center;">
+        <div style="display: inline-block;" id="main"></div>
+        <div style="display: block;" id="panel">
+            <label>Precision:</label>
+            <div id="inc"></div>
+            <label>X axis:</label>
+            <div id="xslider"></div>
+            <label>Y axis:</label>
+            <div id="yslider"></div>
+            <label for="horizontal-scale">Vertical scale:</label>
+            <div id="sclx"></div>
+            <label for="horizontal-scalevertical-scale">Horizontal scale:</label>
+            <div id="scly"></div>
+            <label for="function">Function(in terms of x):</label>
+            <div id="function-container"></div>
+            <label for="derivative">derivative(in terms of x):</label>
+            <div id="derivative-container"></div>
+            <div id="apply"></div>
+        </div>
+    </div>
+</body>
+</html>
